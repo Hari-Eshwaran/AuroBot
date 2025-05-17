@@ -28,3 +28,5 @@ const Footer: React.FC<FooterProps> = ({ showDisclaimer = true }) => {
     </footer>
   );
 };
+
+export default Footer
