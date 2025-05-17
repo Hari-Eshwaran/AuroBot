@@ -8,7 +8,7 @@ function App() {
   return (
     <ChatProvider>
       <div className="flex flex-col min-h-screen">
-        <Header title="AUROBOT" />
+        <Header title="Siva Bot" />
         
         <main className="container mx-auto px-4 py-6 flex-1">
           <section className="max-w-2xl mx-auto">
@@ -31,5 +31,3 @@ function App() {
     </ChatProvider>
   );
 }
-
-export default App;

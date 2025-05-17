@@ -19,7 +19,7 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
   const [messages, setMessages] = useState<Message[]>([
     {
       id: uuidv4(),
-      content: "Hello! I'm AUROBOT, your personal health and wellness assistant. How can I help you today?",
+      content: "Hello! I'm Siva Bot, your personal health and wellness assistant. How can I help you today?",
       role: 'bot',
       timestamp: new Date(),
     },
@@ -76,7 +76,7 @@ export const ChatProvider: React.FC<ChatProviderProps> = ({ children }) => {
     setMessages([
       {
         id: uuidv4(),
-        content: "Hello! I'm AUROBOT, your personal health and wellness assistant. How can I help you today?",
+        content: "Hello! I'm Siva Bot, your personal health and wellness assistant. How can I help you today?",
         role: 'bot',
         timestamp: new Date(),
       },

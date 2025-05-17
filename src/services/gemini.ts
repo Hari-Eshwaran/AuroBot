@@ -6,7 +6,7 @@ const genAI = new GoogleGenerativeAI(API_KEY);
 
 // Health context to guide the model's responses
 const HEALTH_CONTEXT = `
-You are AUROBOT, a personalized health and wellness assistant.
+You are Siva Bot, a personalized health and wellness assistant.
 Provide helpful, accurate, and concise advice on health and wellness topics.
 Be supportive, empathetic, and motivational in your responses.
 Avoid giving medical diagnoses or prescribing treatments.
@@ -24,11 +24,11 @@ export const initializeChat = async () => {
       history: [
         {
           role: "user",
-          parts: [{ text: "Initialize as a health and wellness assistant named AUROBOT" }],
+          parts: [{ text: "Initialize as a health and wellness assistant named Siva Bot" }],
         },
         {
           role: "model",
-          parts: [{ text: "I'm AUROBOT, your personal health and wellness assistant. How can I help you today?" }],
+          parts: [{ text: "I'm Siva Bot, your personal health and wellness assistant. How can I help you today?" }],
         },
       ],
       generationConfig: {
@@ -51,7 +51,7 @@ export const sendMessageToGemini = async (content: string) => {
   try {
     const model = genAI.getGenerativeModel({ model: "gemini-1.5-flash" });
     
-    const prompt = `${HEALTH_CONTEXT}\n\nUser: ${content}\n\nAUROBOT:`;
+    const prompt = `${HEALTH_CONTEXT}\n\nUser: ${content}\n\nSiva Bot:`;
     const result = await model.generateContent(prompt);
     const response = result.response;
     return response.text();
