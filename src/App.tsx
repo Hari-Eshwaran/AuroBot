@@ -31,3 +31,5 @@ function App() {
     </ChatProvider>
   );
 }
+
+export default App
